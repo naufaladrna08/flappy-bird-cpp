@@ -12,7 +12,7 @@ void State::Init() {
   
 }
 
-void State::Update(const float& dt) {
+void State::Update(const float dt) {
 
 }
 

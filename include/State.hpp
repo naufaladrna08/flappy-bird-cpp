@@ -9,7 +9,7 @@ class State {
     State(sf::RenderWindow* window);
     ~State();
 
-    virtual void Update(const float &dt) = 0;
+    virtual void Update(const float dt) = 0;
     virtual void Render(sf::RenderTarget* target = nullptr) = 0;
     virtual void Init() = 0;
 

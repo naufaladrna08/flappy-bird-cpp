@@ -7,7 +7,7 @@ class GameState : public State {
     GameState(sf::RenderWindow* window);
     ~GameState();
 
-    void Update(const float& dt);
+    void Update(const float dt);
     void Render(sf::RenderTarget* target = nullptr);
     void Init();
 
