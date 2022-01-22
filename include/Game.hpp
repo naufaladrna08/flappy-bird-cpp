@@ -3,6 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <stack>
+#include <GameState.hpp>
 
 class Game {
   public:
@@ -11,9 +13,7 @@ class Game {
   private:
     sf::RenderWindow* m_window;
 
-    sf::Sprite* sp_player;
-    sf::Texture* tx_player;
-    sf::Texture* im_bg;
+    std::stack<State*> m_states;
 };
 
 #endif // __GAME_H__
