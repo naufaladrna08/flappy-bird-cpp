@@ -13,7 +13,6 @@ class Game {
 
     sf::Sprite* sp_player;
     sf::Texture* tx_player;
-    sf::RectangleShape* m_bg;
     sf::Texture* im_bg;
 };
 

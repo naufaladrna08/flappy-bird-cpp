@@ -6,6 +6,7 @@ void Game::Run() {
   m_window = new sf::RenderWindow(sf::VideoMode(800, 600), "Flappy Bird");
   m_window->setView(mainView);
 
+
   tx_player = new sf::Texture;
   if (!tx_player->loadFromFile("assets/images/FlappyBird.png")) {
     std::cout << "Missing player texture" << std::endl;
@@ -18,10 +19,10 @@ void Game::Run() {
     std::cout << "Missing background texture" << std::endl;
   }
 
-  m_bg = new sf::RectangleShape;
-  m_bg->setSize(sf::Vector2f(200.0f, 150.0f));
-  m_bg->setTexture(im_bg);
-  m_bg->setPosition(0, 0);
+  sf::RectangleShape m_bg;
+  m_bg.setSize(sf::Vector2f(200.0f, 150.0f));
+  m_bg.setTexture(im_bg);
+  m_bg.setPosition(0, 0);
 
   while (m_window->isOpen()) {
     sf::Event e;
@@ -32,7 +33,7 @@ void Game::Run() {
     }
 
     m_window->clear();
-    m_window->draw(*m_bg);
+    m_window->draw(m_bg);
     m_window->draw(*sp_player);
     m_window->display();
   }
