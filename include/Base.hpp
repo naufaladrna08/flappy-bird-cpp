@@ -5,6 +5,7 @@
 #include <map>
 #include <vector>
 #include <stack>
+#include <math.h>
 
 /* SFML */
 #include <SFML/Graphics.hpp>
