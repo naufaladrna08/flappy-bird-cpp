@@ -38,7 +38,9 @@ void Player::Update(const float dt) {
 }
 
 void Player::Jump(float velocity) {
-
+  jumpCount++;
+  m_velocity = velocity;
+  m_grounded = false;
 }
 
 sf::Sprite Player::GetSprite() {
