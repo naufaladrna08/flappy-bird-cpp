@@ -1,6 +1,7 @@
 #ifndef __GAMESTATE_H__
 #define __GAMESTATE_H__
 #include <State.hpp>
+#include <Player.hpp>
 
 class GameState : public State {
   public:
@@ -12,8 +13,8 @@ class GameState : public State {
     void Init();
 
   private:
-    sf::Sprite* sp_player;
-    sf::Texture* tx_player;
+    Player* player;
+  
     sf::Texture* im_bg;
     sf::RectangleShape* m_bg;
 };
