@@ -1,4 +1,4 @@
-OBJS := main.o Game.o State.o GameState.o
+OBJS := main.o Game.o State.o GameState.o Player.o
 
 %.o: %.cpp
 	g++ -c $^ -o $@ -Iinclude
