@@ -8,7 +8,7 @@ class Player {
     Player();
     ~Player();
 
-    void Init(std::string textureName, sf::Vector2f position, float mass);
+    void Init(sf::Vector2f position, float mass);
     void Update(const float dt);
     void Jump(float velocity);
     sf::Sprite GetSprite();
