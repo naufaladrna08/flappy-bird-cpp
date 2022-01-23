@@ -17,8 +17,11 @@ class Player {
     sf::Texture m_texture;
     sf::Sprite m_sprite;
     sf::Vector2f m_position;
+    sf::Clock m_clock;
+    sf::IntRect* m_srcsprite;
 
     int jumpCount = 0;
+    int x = 0, i = 0;
     float m_mass;
     float m_velocity;
     const float m_gravity = 9.80f;
