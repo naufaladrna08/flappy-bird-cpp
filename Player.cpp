@@ -28,6 +28,7 @@ void Player::Update(const float dt) {
   m_position.y -= m_velocity * dt;
 
   m_sprite.setPosition(m_position);
+  m_sprite.setRotation(-m_velocity / 5);
 
   if (m_position.y >= 149.0f) {
     m_position.y = 149.0f;
