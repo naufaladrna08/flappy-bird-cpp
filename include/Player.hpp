@@ -8,7 +8,7 @@ class Player {
     Player();
     ~Player();
 
-    void Init(std::string textureName, sf::Vector2f position, float mess);
+    void Init(std::string textureName, sf::Vector2f position, float mass);
     void Update(const float dt);
     void Jump(float velocity);
     sf::Sprite GetSprite();
@@ -19,7 +19,7 @@ class Player {
     sf::Vector2f m_position;
 
     int jumpCount = 0;
-    float m_mess;
+    float m_mass;
     float m_velocity;
     const float m_gravity = 9.80f;
     bool m_grounded;
