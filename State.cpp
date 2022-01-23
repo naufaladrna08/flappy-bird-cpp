@@ -16,6 +16,11 @@ void State::Update(const float dt) {
 
 }
 
+void State::UpdateInput(sf::Event e) {
+  
+};
+
+
 void State::Render(sf::RenderTarget* target) {
 
 }

@@ -9,6 +9,7 @@ class GameState : public State {
     ~GameState();
 
     void Update(const float dt);
+    void UpdateInput(sf::Event e);
     void Render(sf::RenderTarget* target = nullptr);
     void Init();
 

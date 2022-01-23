@@ -10,6 +10,7 @@ class State {
     ~State();
 
     virtual void Update(const float dt) = 0;
+    virtual void UpdateInput(sf::Event e) = 0;
     virtual void Render(sf::RenderTarget* target = nullptr) = 0;
     virtual void Init() = 0;
 

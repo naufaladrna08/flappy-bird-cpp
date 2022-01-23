@@ -28,6 +28,14 @@ void GameState::Update(const float dt) {
   player->Update(dt);
 }
 
+void GameState::UpdateInput(sf::Event e) {
+  if (e.type == sf::Event::KeyPressed) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+      player->Jump(200.0f);
+  }
+};
+
+
 void GameState::Render(sf::RenderTarget* target) {
   target->draw(*m_bg);
   target->draw(player->GetSprite());

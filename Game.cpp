@@ -19,6 +19,8 @@ void Game::Run() {
     while (m_window->pollEvent(e)) {
       if (e.type == sf::Event::Closed)
         m_window->close();
+
+      m_states.top()->UpdateInput(e);
     }
 
     sf::Time dt = m_clock.restart();
