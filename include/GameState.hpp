@@ -17,7 +17,7 @@ class GameState : public State {
     Player* player;
   
     sf::Texture* im_bg;
-    sf::RectangleShape* m_bg;
+    sf::RectangleShape* m_bg[2];
 };
 
 #endif
